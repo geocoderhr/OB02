@@ -55,12 +55,12 @@ class Admin(User):
 # Демонстрация работы
 if __name__ == "__main__":
     # Создаем пользователей
-    user1 = User(1, "Alice")
-    user2 = User(2, "Bob")
-    user3 = User(3, "Charlie")
+    user1 = User(1, "Sergei")
+    user2 = User(2, "Alisa")
+    user3 = User(3, "Petr")
 
     # Создаем администратора
-    admin1 = Admin(100, "AdminJohn")
+    admin1 = Admin(100, "AdminAlex")
 
     # Администратор добавляет пользователей
     admin1.add_user(user1)
@@ -72,6 +72,7 @@ if __name__ == "__main__":
 
     # Удаляем пользователя
     admin1.remove_user(2)
+    admin1.remove_user(3)
 
     # Выводим список управляемых пользователей после удаления
     admin1.list_managed_users()
